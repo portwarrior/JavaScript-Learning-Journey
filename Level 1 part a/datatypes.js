@@ -1,5 +1,6 @@
 // there are 7 primitive data types in java
-// nullnumber
+// null
+//number
 // Symbol
 // string
 // Boolean
