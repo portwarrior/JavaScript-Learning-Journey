@@ -1,0 +1,14 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .containerr {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
