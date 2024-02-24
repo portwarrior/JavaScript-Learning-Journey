@@ -1,0 +1,28 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+  
+.container {
+  display: flex;
+  justify-content: center;
+  color: white;
+  align-content: center;
+}
+  
+h1 {
+  font-size: 500%;
+  text-align: center;
+  text-shadow: darkgray;
+}
+
+.clock {
+  margin-top: 5%;
+  height: 45vh;
+  width: 75%;
+  background: black;
+  color: white;
+  font-size: 15vw;
+  text-align: center;
+  font-family: monospace;
+}
