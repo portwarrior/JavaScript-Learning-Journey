@@ -15,7 +15,7 @@
 
 html,body{
     margin: 0;
-    
+
     height: 100%;
     width: 100%;
     background-color: #88A0A8;
@@ -41,4 +41,14 @@ html,body{
     font-family: "Skincake";
     color: black;
     font-size: 3rem;
+}
+
+#object-image{
+    /* scale: 50%; */
+    max-width: 90%; /* Ensure the image fits within the button */
+    max-height: 70%; /* Limit the height of the image */
+}
+
+#object-text{
+    font-size: 6rem;
 }

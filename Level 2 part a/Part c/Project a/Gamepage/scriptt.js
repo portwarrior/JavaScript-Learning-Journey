@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log("The button is clicked")
         const choice=RandomChoice()
         backgroundcolor(choice)
+        updateimage(choice)
     }
 
     function RandomChoice() {
@@ -32,4 +33,14 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
+    function updateimage(choice){
+        const buttontext=capital(choice)
+        console.log(`Updating image to ${choice}.png`);
+        document.getElementById("object-text").innerText=buttontext
+        document.getElementById("object-image").src="../Images/${choice}.png"
+    }
+
+    function capital(string){
+        return string.charAt(0).toUpperCase() + string.slice(1)
+    }
 });
