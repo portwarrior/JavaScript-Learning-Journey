@@ -3,6 +3,17 @@
     src: url(Super\ Cosmic\ Personal\ Use.ttf);
 }
 
+@font-face {
+    font-family:"Skincake";
+    src: url(Skincake.ttf);
+}
+
+@font-face {
+    font-family:"Golden";
+    src: url(The\ Golden\ Pussy.ttf);
+}
+
+
 html,body{
     height: 100%;
     width: 100%;
@@ -10,11 +21,31 @@ html,body{
     text-align: center;
 }
 
+#main-header{
+    font-family: "Skincake";
+    color: white;
+    font-size: 3rem;
+}
+
 #starter{
     font-family: "Super";
-    font-size: 100px;
+    font-size: 6rem;
     height: 500px;
     width: 500px;
     border-radius: 25%;
 }
 
+
+#secpar{
+    font-family: "golden";
+    font-size: 2rem;
+    color: white;
+
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
