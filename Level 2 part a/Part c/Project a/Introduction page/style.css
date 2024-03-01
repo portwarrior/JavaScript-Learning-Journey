@@ -1,18 +1,17 @@
 @font-face {
-    font-family:"Super";
-    src: url(Super\ Cosmic\ Personal\ Use.ttf);
-}
-
-@font-face {
     font-family:"Skincake";
-    src: url(Skincake.ttf);
+    src: url('../Fonts/Skincake.ttf')
 }
 
 @font-face {
     font-family:"Golden";
-    src: url(The\ Golden\ Pussy.ttf);
+    src: url('../Fonts/The\ Golden\ Pussy.ttf')
 }
 
+@font-face {
+    font-family: 'SuperCosmic';
+    src: url('../Fonts/SuperCosmic.ttf')
+}
 
 html,body{
     height: 100%;
@@ -28,19 +27,32 @@ html,body{
 }
 
 #starter{
-    font-family: "Super";
+    font-family: "SuperCosmic";
     font-size: 6rem;
     height: 500px;
     width: 500px;
     border-radius: 25%;
+    text-decoration: none;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
 
 #secpar{
     font-family: "golden";
     font-size: 2rem;
     color: white;
 
+}
+
+#buttonn{
+    font-family: "SuperCosmic";
+    font-size: 6rem;
+    height: 500px;
+    width: 500px;
+    border-radius: 25%;
 }
 
 
