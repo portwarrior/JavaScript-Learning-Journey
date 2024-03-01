@@ -14,10 +14,16 @@
 }
 
 html,body{
+    margin: 0;
+    
+    height: 100%;
+    width: 100%;
     background-color: #88A0A8;
 }
 
 .container{
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,7 +37,7 @@ html,body{
     border-radius: 25%;
 }
 
-#main-headerr{
+#main-header{
     font-family: "Skincake";
     color: black;
     font-size: 3rem;

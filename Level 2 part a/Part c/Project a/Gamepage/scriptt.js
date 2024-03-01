@@ -17,7 +17,8 @@ document.addEventListener("DOMContentLoaded", function() {
     function backgroundcolor(choice){
         switch(choice){
             case "rock":
-                document.body.style.backgroundColor = '#0E1428';
+                document.body.style.background = '#0E1428';
+                document.getElementById("main-header").style.color="white"
                 break
             case "paper":
                 document.body.style.backgroundColor = '#95190C';
