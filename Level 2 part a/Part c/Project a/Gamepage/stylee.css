@@ -1,3 +1,38 @@
+@font-face {
+    font-family:"Skincake";
+    src: url('../Fonts/Skincake.ttf')
+}
+
+@font-face {
+    font-family:"Golden";
+    src: url('../Fonts/The\ Golden\ Pussy.ttf')
+}
+
+@font-face {
+    font-family: 'SuperCosmic';
+    src: url('../Fonts/SuperCosmic.ttf')
+}
+
 html,body{
     background-color: #88A0A8;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Starterr{
+    font-family: "SuperCosmic";
+    font-size: 6rem;
+    height: 500px;
+    width: 500px;
+    border-radius: 25%;
+}
+
+#main-headerr{
+    font-family: "Skincake";
+    color: black;
+    font-size: 3rem;
 }
