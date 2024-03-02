@@ -31,7 +31,7 @@ html,body{
 
 #Starterr{
     font-family: "SuperCosmic";
-    font-size: 6rem;
+    font-size: 5rem;
     height: 500px;
     width: 500px;
     border-radius: 25%;
@@ -50,5 +50,5 @@ html,body{
 }
 
 #object-text{
-    font-size: 6rem;
+    font-size: 5rem;
 }

@@ -1,6 +1,13 @@
 document.addEventListener("DOMContentLoaded", function() {
     const options=["rock","paper","scissors"]
 
+    const counter = {
+        rock:1,
+        paper:1,
+        scissors:1
+    }
+
+    let prevchoice=null
 
     document.getElementById("Starterr").addEventListener("click",play)
 
@@ -9,6 +16,14 @@ document.addEventListener("DOMContentLoaded", function() {
         const choice=RandomChoice()
         backgroundcolor(choice)
         updateimage(choice)
+
+        if(choice!==prevchoice){
+            reset()
+            prevchoice=choice
+        }
+        counter[choice]++
+        prevchoice=choice
+
     }
 
     function RandomChoice() {
@@ -18,14 +33,16 @@ document.addEventListener("DOMContentLoaded", function() {
     function backgroundcolor(choice){
         switch(choice){
             case "rock":
-                document.body.style.background = '#0E1428';
+                document.body.style.backgroundColor = '#0E1428';
                 document.getElementById("main-header").style.color="white"
                 break
             case "paper":
                 document.body.style.backgroundColor = '#95190C';
+                document.getElementById("main-header").style.color="white"
                 break
             case "scissors":
                 document.body.style.backgroundColor = '#F18805';
+                document.getElementById("main-header").style.color="white"
                 break
             default:
                 document.body.style.backgroundColor = '#88A0A8';
@@ -33,14 +50,20 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
+    function reset(){
+        for(const choice in counter )
+        counter[choice]=1
+    }
+
     function updateimage(choice){
         const buttontext=capital(choice)
-        console.log(`Updating image to ${choice}.png`);
+        // console.log(`Updating image to ${choice}.png`);
         document.getElementById("object-text").innerText=buttontext
-        document.getElementById("object-image").src="../Images/${choice}.png"
+        // document.getElementById("object-image").src="../Images/${choice}.png"
     }
 
     function capital(string){
-        return string.charAt(0).toUpperCase() + string.slice(1)
+        let x=counter[string]
+        return string.charAt(0).toUpperCase() + string.slice(1) + "     X " +x
     }
 });
